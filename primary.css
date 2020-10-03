@@ -1,0 +1,123 @@
+*{
+    font-size:22px;
+    font-family: Roboto;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(Roboto-Regular.ttf)
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(Roboto-Bold.ttf)
+
+}
+
+
+body{
+    background-color:lightsteelblue;
+    background-image:url(an-old-and-worn-parchment-paper.jpg) ;
+}
+main{
+    max-width: 66%;
+    margin-left:20vw;
+    margin-right:20vw;
+    border: solid 1.5px #003;
+    border-radius: 10px;
+    padding:1px;
+}
+.heading1{
+    font-size:4rem;
+    text-align: center;
+}
+.heading2{
+    font-size:2.5rem;
+    text-align: center;
+}
+.legend1{
+    font-size:1.5rem;
+    text-align: left;
+    margin-left:10%;
+}
+.subtitle{
+    font-size:2.5rem;
+    text-align: center;
+}
+#description{
+    text-align: justify;
+    margin:0 0.5vw 0 0.5vw;
+}
+.form-section{
+    text-align: justify;
+    margin:0.5rem;
+    border-radius: 10px;
+}
+#submit{
+    width:5rem;
+    height:2.5rem;
+    margin-left: 40%;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+    font-size:1.2rem;
+    border-radius: 5px;
+}
+#comments{
+    width:100%;
+    height:5rem;
+    border-radius: 4px;
+}
+input{
+    margin:0.5rem;
+    border-radius: 4px;
+}
+
+select{
+    margin: 0.5rem;
+    border-radius: 4px;
+}
+
+.heading1-a{
+    font-size:5rem;
+    text-align: center;
+}
+.paragraph1-a{
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media only screen and (max-width:800px){
+    .form-section{
+        text-align:left;
+    }
+    main{
+        max-width:100%;
+        margin-left:5vw;
+        margin-right:5vw;
+    }
+    .heading1-a{
+        font-size:3rem;
+    }
+    .paragraph1-a{
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width:500px){
+    *{
+        font-size: 16px;
+    }
+    main{
+        max-width:100%;
+        margin-left:5vw;
+        margin-right:5vw;
+    }
+    input{
+        max-width: 90%;
+        font-size:0.75rem;
+        margin: 0.25rem;
+    }
+    select{
+        font-size: 0.75rem;
+    }
+    .legend1{
+        font-size:1.25rem;
+    }
+}
