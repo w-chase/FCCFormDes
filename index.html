@@ -37,6 +37,7 @@
                     <legend class="legend1">Financial Information</legend>
                     <label for="dropdown"> Annual Household Income</label>
                     <select id="dropdown" name="income" required>
+                        <option value=""></option>
                         <option value="0 - 20,000">$0 - $20,000</option>
                         <option value="20,001 - 30,000">$20,001 - $30,000</option>
                         <option value="30,001 - 40,000">$30,001 - $40,000</option>
@@ -53,13 +54,13 @@
                     <input id="number" name="food-purchases" type="number" min="1" max="10000" required placeholder="$/month">
                     <br>
                     <label for="adults" id="adults-label">Number of Adults:</label>
-                    <input id="adults" name="adults" type="number" min="1" max="10"required >
+                    <input id="adults" name="adults" type="number" min="1" max="10" required >
                     <br>
                     <label for="children" id="children-label">Number of Children:</label>
                     <input id="children" name="children" type="number" min="0" max="20" required >
                     <br>
                     <p>Select the age's in your household:</p>
-                    <fieldset aria-required="true">
+                    <fieldset>
                         <input id="0-2" name="age-range" type="checkbox" value="0-2">
                         <label for="0-2" id="0-2-label">0-2 years old</label>
                         <input id="3-7" name="age-range" type="checkbox" value="3-7">
@@ -83,7 +84,7 @@
                     </fieldset>
 
                 </fieldset>
-                <fieldset class="form-section" aria-required="true">
+                <fieldset class="form-section">
                     <legend class="legend1">Habits</legend>
                     <p>How often do you shop per week?</p>
                     <input type="radio" id="1-2" name="#-week" value="1-2">
@@ -100,7 +101,7 @@
                     <input type="radio" id="instore" name="how" value="instore">
                     <label for="instore">Instore</label>
                 </fieldset>
-                <fieldset class="form-section" aria-required="true">
+                <fieldset class="form-section">
                     <legend class="legend1">Other Information</legend>
                     <p>Would you like to be added to our mailing list to receive tips and tricks about saving money on your grocery bills?</p>
                     <input type="radio" id="yes" name="y/n" value="yes">
@@ -114,6 +115,15 @@
             </form>
 
         </main>
+        <footer>
+            <p>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                </a>
+            </p>
+        </footer>
         <script src= "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" async defer></script>
     </body>
 

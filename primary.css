@@ -59,6 +59,7 @@ main{
     margin-bottom:2rem;
     font-size:1.2rem;
     border-radius: 5px;
+    cursor: pointer;
 }
 #comments{
     width:100%;
