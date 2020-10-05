@@ -1,10 +1,11 @@
 *{
     font-size:22px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 }
 @font-face {
     font-family: "Roboto";
     src: url(Roboto-Regular.ttf)
+
 }
 @font-face {
     font-family: "Roboto-Bold";
@@ -14,20 +15,23 @@
 
 
 body{
-    background-color:lightsteelblue;
-    background-image:url(an-old-and-worn-parchment-paper.jpg) ;
+   background-image: linear-gradient(32deg, rgba(0, 183, 255, 0.305),rgba(67, 18, 202, 0.714));
+   
 }
 main{
     max-width: 66%;
     margin-left:20vw;
     margin-right:20vw;
-    border: solid 1.5px #003;
+    border: groove 3px rgb(22, 22, 207);
+    /*border-image: linear-gradient(64deg,blue, red);*/
     border-radius: 10px;
     padding:1px;
 }
 .heading1{
     font-size:4rem;
     text-align: center;
+    
+    text-shadow: 4px 4px 4px grey;
 }
 .heading2{
     font-size:2.5rem;
@@ -47,6 +51,12 @@ main{
     margin:0 0.5vw 0 0.5vw;
 }
 .form-section{
+    text-align: left;
+    margin:0.5rem;
+    border-radius: 10px;
+    border-color: rgb(22, 22, 207)
+}
+.form-section-top{
     text-align: justify;
     margin:0.5rem;
     border-radius: 10px;
@@ -60,11 +70,18 @@ main{
     font-size:1.2rem;
     border-radius: 5px;
     cursor: pointer;
+    color: white;
+    background-image: radial-gradient(rgb(67, 34, 185), rgb(59, 42, 209));
+}
+#submit:hover{
+    width: 6rem;
+    height: 3rem;
 }
 #comments{
     width:100%;
     height:5rem;
     border-radius: 4px;
+    resize: none;
 }
 input{
     margin:0.5rem;
@@ -84,7 +101,20 @@ select{
     font-size: 3rem;
     text-align: center;
 }
-
+.fieldset-1{
+    border-color: rgb(22, 22, 207)
+}
+.checkbox1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+    
+}
+.radio-button{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(1 ,1fr);
+}
 @media only screen and (max-width:800px){
     .form-section{
         text-align:left;
@@ -120,5 +150,15 @@ select{
     }
     .legend1{
         font-size:1.25rem;
+    }
+    .checkbox1{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 1fr);
+    }
+    .radio-button{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 ,1fr);
     }
 }
